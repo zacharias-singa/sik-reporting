@@ -21,3 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::post('sik-send', [SikController::class, 'sendSik']);
+Route::get('sik-send', [SikController::class, 'testGet']);

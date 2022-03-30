@@ -23,4 +23,9 @@ class SikController extends Controller
 
         Log::info("attempt_send_zip_to_fdc_server", ['storage_name' => $storageName, 'storage_path' => $storagePath]);
     }
+
+    public function testGet(Request $request)
+    {
+        print "helo";
+    }
 }
