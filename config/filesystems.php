@@ -53,6 +53,18 @@ return [
             'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
         ],
 
+        'fdc-sftp' => [
+            'driver' => 'sftp',
+            'host' => 'fdc-dev.afpi.or.id',
+            'username' => '820085',
+            'password' => '820085',
+            'visibility' => 'public',
+            'permPublic' => 0766, /// <- this one did the trick
+            'port' => 22,
+            'root' => '/in',
+            // 'timeout' => 30,
+        ],
+
     ],
 
     /*
